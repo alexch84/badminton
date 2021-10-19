@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "833719122332",
+    "firebase_url": "https://badmintonapp-b2e24-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "badmintonapp-b2e24",
+    "storage_bucket": "badmintonapp-b2e24.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:833719122332:android:0a1dbea699a758a1263059",
+        "android_client_info": {
+          "package_name": "com.example.badmintonapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "833719122332-gbsjtdeerc5nq42gdhlsqhuuu3tm42aj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBpop6j2BEvTJ9QC4IQm-bVPYz9ufUEJhw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "833719122332-gbsjtdeerc5nq42gdhlsqhuuu3tm42aj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

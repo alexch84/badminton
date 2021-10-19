@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/totalFragment">
+
+    <fragment
+        android:id="@+id/totalFragment"
+        android:name="com.example.badmintonapp.ui.TotalFragment"
+        android:label="fragment_total"
+        tools:layout="@layout/fragment_total" />
+    <fragment
+        android:id="@+id/gamesFragment"
+        android:name="com.example.badmintonapp.ui.GamesFragment"
+        android:label="fragment_games"
+        tools:layout="@layout/fragment_games" >
+        <action
+            android:id="@+id/action_gamesFragment_to_addGameDialogFragment"
+            app:destination="@id/addGameDialogFragment" />
+    </fragment>
+    <dialog
+        android:id="@+id/addGameDialogFragment"
+        android:name="com.example.badmintonapp.ui.AddGameDialogFragment"
+        android:label="fragment_add_game_dialog"
+        tools:layout="@layout/fragment_add_game_dialog" />
+</navigation>
