@@ -4,12 +4,10 @@ import android.app.DatePickerDialog
 import android.graphics.Point
 import android.os.Bundle
 import android.view.*
-import androidx.fragment.app.Fragment
 import android.widget.Toast
 import androidx.fragment.app.DialogFragment
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
-import androidx.lifecycle.ViewModelProviders
 import com.example.badmintonapp.R
 import com.example.badmintonapp.data.Game
 import com.example.badmintonapp.databinding.FragmentAddGameDialogBinding
@@ -93,7 +91,7 @@ class AddGameDialogFragment : DialogFragment() {
         val day = cal[Calendar.DAY_OF_MONTH]
         val datePickerDialog = DatePickerDialog(
             requireContext(), R.style.MyDatePicker,
-            { view, year, month, dayOfMonth ->
+            { _, year, month, dayOfMonth ->
                 val m: String = if (month < 9) {
                     "0" + (month + 1)
                 } else {
